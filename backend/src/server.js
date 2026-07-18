@@ -17,7 +17,7 @@ app.use(clerkMiddleware()); //req.auth will be available in the request object
 app.use("/api/inngest", serve({ client: inngest, functions }));
 app.use("/api/chat", chatRoutes);
 
-app.get("/debug-sentry1", (res, req) => {
+app.get("/debug-sentry", (res, req) => {
   throw new Error("First Sentry error!");
 });
 

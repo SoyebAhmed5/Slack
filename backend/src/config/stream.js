@@ -6,7 +6,7 @@ const streamClient = StreamChat.getInstance(
   ENV.STREAM_API_SECRET,
 );
 
-export const upsertStreamUser = async (userdata) => {
+export const upsertStreamUser = async (userData) => {
   try {
     await streamClient.upsertUser(userData);
     console.log("Stream user upserted successfully:", userData.name);
